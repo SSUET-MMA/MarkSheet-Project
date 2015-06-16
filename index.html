@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<STYLE>
+			body
+				{
+					border-radius:20px;
+					border-style:double;
+					border-color:blue;
+					position:absolute;
+					width:90%;
+					height:90%;
+					padding:30px 30px 50px 30px;
+				}
+			#tbl,#tbl2
+				{
+					border-collapse:collapse;
+					font-size:10;
+					font-family:Century Gothic;
+				}
+			
+			.btn
+			{
+				position:absolute;
+				top:29%;
+				left:85%;
+			}
+		</STYLE>
+		
+		<title>MarkSheet Project</title>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		
+		<DIV class="Color">
+			<H1 align="center"style="font-family:cambria;font-size:40";><U>STUDENT MARKSHEET</H1>
+			<FIELDSET>
+			<LEGEND> STUDENT INFORMATION </LEGEND>
+			<TABLE align="center" id="tbl"> 
+			<FORM name="form1">
+			</TR>
+			<TD width="10">Name:</TD> <TD><INPUT type="text" id="name"/></TD>
+			<td><span id="name_msg"></span></td>
+			<TD> &nbsp; &nbsp;Father Name:</TD><TD> <INPUT type="text" id="fathername"/></TD>
+			<td><span id="fathername_msg"></span></td>
+			</TR>
+			</TABLE>
+			</FIELDSET></BR>
+		
+		<FIELDSET>
+		<LEGEND> SUBJECTS MARKS </LEGEND>
+		<TABLE id="tbl2">
+		
+			
+			<tr>
+				<td>Math</td>
+				<td><input type="number" id="math" /></td>
+				<td><span id="math_msg"></span></td>
+			</tr>
+			<tr>
+				<td>English</td>
+				<td><input type="number" id="english" /></td>
+				<td><span id="english_msg"></span></td>
+			</tr>
+			<tr>
+				<td>Urdu</td>
+				<td><input type="number" id="urdu" /></td>
+				<td><span id="urdu_msg"></span></td>
+			</tr>
+			
+		</TABLE>
+		
+		</FIELDSET>
+			<DIV class="btn">
+				<tr>
+				<td></td>
+				<td><input type="button" value="Save" onclick="saveRecord()" /></td>
+			</tr>	
+			</DIV>
+		
+		<br />
+		<table id="studentsTable" cellpadding="5" border="1">
+			<tr>
+				<th width="60px">S.No</th>
+				<th width="300px">Name</th>
+				<th width="300px">Father Name</th>
+				<th width="100px">Math</th>
+				<th width="100px">English</th>
+				<th width="100px">Urdu</th>
+				<th width="100px">Total Marks</th>
+				<th width="100px">Percentage</th>
+				<th width="100px">Grade</th>
+			</tr>
+		</table>
+		</DIV>
+	</body>
+</html>
